@@ -1,0 +1,305 @@
+body{
+background-color: #2D241E;
+padding: 0;
+margin: 0;
+}
+
+#banniere_p{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*------------------------------------------menu--------------------------------------*/
+header{
+  position: relative;
+}
+nav {
+  /*position:absolute;*/
+
+  padding-top: 5%;  /*A ENLEVER SI BANNIERE*/
+  bottom: 0;
+  width:100%;
+}
+
+
+
+
+#menu{
+  margin: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #ED0000;
+  border: solid black 2px;
+  border-radius: 1.5em 1.5em 0 0;
+  text-align: center;
+}
+
+
+
+
+#menu li{
+display:inline-block;
+position:relative;        /*on va placer les sous menus en absolue par rapport aux menus li*/
+width: 16.5%;
+
+
+}
+
+#menu ul li{
+display:inherit;
+border-radius:0;
+width: 100%;
+}
+
+#menu ul li:hover{
+border-radius:0;
+}
+
+#menu ul li:last-child{
+border-radius:0 0 8px 8px;       /*fin de sous menus arrondit*/
+}
+
+#menu ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .5s all .3s;        /*vitesse de déroulmeent sous menus*/
+-webkit-transition: .5s all .3s;
+transition: .5s all .3s;
+}
+
+#menu li:hover ul{
+max-height:15em;         /*taillemax des sous menus*/
+}
+
+/* background des liens menus */
+#menu li:first-child{
+background-color: #65537A;
+background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
+background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+}
+#menu li:nth-child(2){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+#menu li:nth-child(3){
+background-color: #F6AD1A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+}
+#menu li:nth-child(4){
+background-color: #992600;
+background-image:-webkit-linear-gradient(top, #992600 0%, #330d00 100%);
+background-image:linear-gradient(to bottom, #992600 0%, #330d00 100%);
+}
+#menu li:nth-child(5){
+background-color: #F6AD1A;
+background-image:-webkit-linear-gradient(top, #CC0099 0%, #66004d 100%);
+background-image:linear-gradient(to bottom, #CC0099 0%, #66004d 100%);
+}
+#menu li:nth-child(6){
+background-color: #F6AD1A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+}
+
+#menu li:last-child{
+background-color: #CFFF6A;
+background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+
+
+/* background des liens sous menus */
+
+
+#menu li:nth-child(2) li{
+background:#333A40;
+}
+#menu li:nth-child(3) li{
+background:#9F391A;
+}
+#menu li:nth-child(4) li{
+background:#330d00;
+}
+#menu li:nth-child(5) li{
+background:#66004d;
+}
+
+
+
+
+/* background des liens menus et sous menus au survol */
+#menu li:first-child:hover, #menu li:first-child li:hover{
+background:#65537A;
+}
+#menu li:nth-child(2):hover, #menu li:nth-child(2) li:hover{
+background:#729EBF;
+}
+#menu li:nth-child(3):hover, #menu li:nth-child(3) li:hover{
+background:#F6AD1A;
+}
+#menu li:nth-child(4):hover, #menu li:nth-child(4) li:hover{
+background:#e63900;
+}
+#menu li:nth-child(5):hover, #menu li:nth-child(5) li:hover{
+background:#ff4dd2;
+}
+#menu li:nth-child(6):hover, #menu li:nth-child(6) li:hover{
+background:#F6AD1A;
+}
+#menu li:last-child:hover, #menu li:last-child li:hover{
+background:#CFFF6A;
+}
+/* les liens a href */
+#menu a{
+text-decoration: none;
+display:block;
+padding:8px 0;
+color:white;
+font-family:arial;
+text-align: center;
+font-size: 1.5em;
+}
+#menu li ul li a{    /*texte (a href) occupe 100% de l'espace du sous menu dispo*/
+  width: 100%;
+}
+
+#menu ul a{
+padding:8px 0;
+}
+#menu li:hover li a{
+color: white;
+text-transform:inherit;
+}
+#menu li:hover a, #menu li li:hover a{
+color:#000;
+}
+
+
+/*------------------------------BOUTON HAUT DE PAGE----------------------------*/
+a.up img{
+  position: fixed;
+  bottom: 0;
+  right: 15%;
+  width: 4em;
+  height: 4em;
+}
+
+
+/*---------------------------------CONTENU-------------------------------------------------*/
+section{
+  position: relative;
+  width: 100%;
+}
+/*----------------------------BANNIERE GAUCHE----------------------------------------*/
+
+.banniere_g{
+  background-color: #ED0000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15.3%;
+  border-left: solid black 2px;
+  border-right: solid black 1px;
+  min-height: 200%;
+}
+
+.banniere_g ul{
+  list-style-type: none;
+  /*text-align: center;
+  padding-left: 0;*/
+}
+
+.banniere_g a{
+
+  text-decoration: none;
+  color: black;
+}
+
+.banniere_g a:hover{
+  font-weight: bold;
+}
+
+
+
+/*---------------------------------BANNIERE MILIEU-----------------------------------*/
+.contenu{
+  margin-left: 15.3%;
+  margin-right:15.3%;
+  background-color: grey;
+  text-align: center;
+  padding: 2em 1em 0 1em;
+  /*height: auto;*/
+  min-height: 200%;
+}
+
+.contenu h1{
+  margin: 0;
+  font-size: 2em;
+  height: 200%;
+}
+
+.contenu p{
+  font-size: 1em;
+}
+
+/*------------------------------SCROLLER---------------------------------------*/
+.scroll {
+	width : auto;
+}
+.scroll .content {
+	overflow : auto; /* Permet au personnes ayant désactivé le javascript de pouvoir lire la suite du texte, prend la valeur "scroll" par défaut */
+	white-space : nowrap;   /*pas d'espace entre les div*/
+}
+
+/* IE6 */
+* html .scroll .content {
+	width : 870px;
+}
+
+.scroll .left {
+	float:left;
+  padding-left: 10%;
+}
+
+.scroll .right {
+  float: right;
+  padding-right: 10%;
+}
+
+/* pour cacher l'overflow si js est installer sur le navigateur */
+
+/*.scroll .content {
+  overflow : hidden;
+}*/
+
+/*----------------------------------------------------------------------------------*/
+#hamster{
+  text-align: center;
+}
+
+
+
+
+
+/*-----------------------------BANNIERE DROITE-----------------------------------*/
+.banniere_d{
+  background-color: #ED0000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15.3%;
+  border-right: solid black 2px;
+  border-left: solid black 1px;
+  min-height: 200%;
+}

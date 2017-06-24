@@ -1,0 +1,131 @@
+body
+{
+  /*background-color: black;*/
+  color: red;
+  font-family: Calibri, Arial, sans-serif;
+  /*width:80%;*/
+  margin: auto;
+  }
+
+  html, body {
+      height:100%;
+  }
+
+.retour_accueil{
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 0;
+  left: 0;
+
+}
+
+header h1{
+	font-variant:small-caps;
+	text-align:center;
+  font-weight: bold;
+  /*margin-left: 40%;
+  margin-right: 40%;*/
+
+}
+
+nav {
+	background-color: red;
+	padding:5px;
+  margin-left: 10%;
+  margin-right: 10%;
+	margin-bottom:10px;}
+
+nav ul {
+	margin:0px;
+	padding:0px;
+	text-align:right;}
+
+nav li{
+	list-style-type:none;
+	display:inline-block;
+	border-left:1px solid #0F0;
+	padding-left:5px;}
+
+nav a{
+  color:black;
+  font-size:0.9em;
+  text-decoration:none;}
+
+nav a:hover{
+    cursor:pointer;
+    color:black;
+    font-size:0.9em;
+    font-weight: bold;
+    text-decoration:none;}
+
+div.musique{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+div.extrait{
+    display: inline-block;
+}
+
+div.extrait a{
+  width: 8.5em;
+  height: 8.5em;
+}
+
+div.extrait img{
+    width: 8.5em;
+    height: 8.5em;
+    padding: 3px;
+}
+
+div.extrait img:hover{
+    width: 8.5em;
+    height:8.5em;
+    border: 3px solid red;
+    padding: 0px;
+}
+
+
+
+/*---------------------------NOUVELLE DIV AJAX---------------------------------*/
+
+div #newDiv_id{
+  background-color: black;
+  border: 4px dotted #0F0;
+}
+
+#CHECK_IT_BABY{
+  width: 3em;
+  height: 3em;
+}
+
+.img_buttons_playlistDown{
+  width: 2em;
+  height: 2em;
+}
+
+
+/*-----------------------------CANVAS------------------------------------*/
+
+#Global_z1{
+  z-index:1;
+}
+
+canvas {
+/*display: block;*/
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+/*-----------------------------MOSQUITO------------------------------------*/
+.mosquito_class{
+  background-image: url(Images/mosquito_img.png);
+}
+
+.mosquitoBoss_class{
+  background-image: url(Images/mosquitoBoss_img.png);
+}
